@@ -861,6 +861,17 @@ footer em {
     border: 1px solid rgba(83, 102, 99, 0.3);
     
   }
+   .rekom {
+    display: inline-block;
+    
+    font-family: 'nature';
+    font-size: 50px   ;
+    color: #ffffff;
+    margin-left:0.8em ;
+    
+  
+  
+  }
 }
 
 @media (min-width: 1200px) {
