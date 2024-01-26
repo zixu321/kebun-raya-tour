@@ -701,7 +701,24 @@ footer em {
 
 @media (max-width: 767px){
   
+ .baner-content {
+    padding-top: 30vh;
+  }
 
+  .baner-content h1 {
+    font-size: 64px;
+  }
+
+  .baner-content em {
+  }
+
+  .baner-content span {
+    font-size: 24px;
+  }
+
+  .baner-content .primary-button {
+    margin-top: 15px;
+  }
 .service-content {
   padding-left: 15px;
   padding-right: 15px;
