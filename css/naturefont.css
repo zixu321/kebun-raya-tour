@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Nature';
+    src: url('Nature.eot');
+    src: url('Nature.eot?#iefix') format('embedded-opentype'),
+        url('Nature.woff2') format('woff2'),
+        url('Nature.woff') format('woff'),
+        url('Nature.ttf') format('truetype'),
+        url('Nature.svg#Nature') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
