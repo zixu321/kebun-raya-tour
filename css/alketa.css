@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'alketa demo';
+    src: url('fonts/alketademo-regular.eot');
+    src: url('fonts/alketademo-regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/alketademo-regular.woff2') format('woff2'),
+        url('fonts/alketademo-regular.woff') format('woff'),
+        url('fonts/alketademo-regular.ttf') format('truetype'),
+        url('fonts/alketademo-regular.svg#alketademo-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
