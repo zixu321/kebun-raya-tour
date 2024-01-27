@@ -4,7 +4,7 @@
   src: url('fonts/Nature.eot');
   src: url('fonts/Nature.eot?#iefix') format('embedded-opentype'),
       url('fonts/Nature.woff2') format('woff2'),
-      url('fonts/Nature.woff') format('woff'),
+      url('fonts/Nature.woff') git format('woff'),
       url('fonts/Nature.ttf') format('truetype'),
       url('fonts/Nature.svg') format('svg');
   font-weight: normal;
@@ -199,12 +199,12 @@ a:hover { color: #FF0; }
 
 .baner-content h1 {
   margin-top: 0px;
-  font-size: 190px;
+  font-size: 150px;
   color: #d7f0ea;
   font-weight: 90;
- 
   margin-bottom: 0px;
-  font-family: 'nature';
+  font-family: 'alketa demo';
+  text-shadow: 3px 3px 3px #477976;
   
   
   
@@ -223,6 +223,7 @@ a:hover { color: #FF0; }
   color: #8DAA9E;
   position: relative;
   padding-left: 5px;
+  text-shadow: 1px 1px 1px#ffffff;
 }
 .stay span::before {
   
@@ -701,7 +702,9 @@ footer em {
 
 @media (max-width: 767px){
   
-.baner-content {
+  
+
+  .baner-content {
     padding-top: 30vh;
   }
 
@@ -845,28 +848,10 @@ footer em {
     margin: 0px 0px 15px 0px;
   }
   .service-content .service-item-supp {
-    height: 246px;
-    padding: 25px 30px;
-    text-align: left;
-    color: #fff;
-    margin-bottom: 30px;
-    overflow: auto;
-    background: rgba(53, 70, 67, 0.467);
-    border-radius: 16px;
-    box-shadow: 1px 7px 31px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 1px 7px 31px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 7px 31px 0px rgba(0,0,0,0.75);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(83, 102, 99, 0.3);
-    
+
   }
-   .rekom {
-    display: inline-block;
+  .rekom {
     
-    font-family: 'nature';
-    font-size: 50px   ;
-    color: #ffffff;
     margin-left:0.8em ;
     
   
