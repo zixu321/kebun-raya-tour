@@ -4,7 +4,7 @@
   src: url('fonts/Nature.eot');
   src: url('fonts/Nature.eot?#iefix') format('embedded-opentype'),
       url('fonts/Nature.woff2') format('woff2'),
-      url('fonts/Nature.woff') git format('woff'),
+      url('fonts/Nature.woff')  format('woff'),
       url('fonts/Nature.ttf') format('truetype'),
       url('fonts/Nature.svg') format('svg');
   font-weight: normal;
@@ -193,18 +193,26 @@ a:hover { color: #FF0; }
 
 .baner-content {
   padding-top: 30vh;
-  text-align: center;
+  
   background-image: url(../img/proj/IMG_5195blur.jpg);
+}
+.baner-content .first-content {
+ text-align: left;
+ position: absolute;
+
+
 }
 
 .baner-content h1 {
   margin-top: 0px;
-  font-size: 150px;
+  font-size: 100px;
   color: #d7f0ea;
+text-shadow: 3px 3px 3px #477976;
   font-weight: 90;
   margin-bottom: 0px;
   font-family: 'alketa demo';
-  text-shadow: 3px 3px 3px #477976;
+  color: #d7f0ea;
+text-shadow: 3px 3px 3px #477976;
   
   
   
@@ -220,10 +228,11 @@ a:hover { color: #FF0; }
  
 }
 .stay span {
-  color: #8DAA9E;
+  color: #d7f0ea;
+ text-shadow: 3px 3px 3px #477976;
   position: relative;
   padding-left: 5px;
-  text-shadow: 1px 1px 1px#ffffff;
+
 }
 .stay span::before {
   
@@ -246,6 +255,65 @@ a:hover { color: #FF0; }
 .baner-content .primary-button {
   margin-top: 15px;
 }
+.baner-content .wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  margin-left: 65rem;
+  
+  
+}
+
+.baner-content .wrapper .container {
+  height: 230px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.card {
+  width: 50px;
+  border-radius: .75rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin: 0 5px;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: 0px 10px 30px -5px rgb(0, 0, 0);
+  border: 5px solid #758784;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 400px;
+}
+
+input:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+  background-image: url(../img/proj/rafles.jpg);
+}
+.card[for="c2"] {
+  background-image: url(../img/proj/akuatik.jpg);
+}
+.card[for="c3"] {
+  background-image: url(../img/proj/astrid2.jpg);
+}
+.card[for="c4"] {
+  background-image: url(../img/proj/zoologi3.jpg);
+}
+
 
 
 
@@ -322,7 +390,7 @@ h4, .h4 {
   margin: 30px 0px;
 }
 
-.service-content .service-item-history {
+.service-content  .service-item-history {
   padding: 25px 30px;
   text-align: left;
   color: #fff;
@@ -407,14 +475,20 @@ h4, .h4 {
 }
 
 .projects-content .item {
-  margin: 15px;
+  margin: 30px;
+  transition: all .2s ease-in-out;
+
 }
+
+
+
+
 
 .projects-content .item .text-content {
   padding: 25px;
   text-align: left;
   color: #fff;
-  margin-bottom: 30px;
+  
   overflow: auto;
   background: rgba(53, 70, 67, 0.467);
   box-shadow: 1px 7px 31px 0px rgba(0,0,0,0.75);
@@ -425,11 +499,6 @@ h4, .h4 {
   height: 200px;
 }
 
-.projects-content .item .text-content h4 {
-  margin-top: 0px;
-  font-size: 19px;
-  font-weight: 600;
-}
 
 .projects-content .item .text-content span {
   font-style: normal;
@@ -639,7 +708,10 @@ section {
   padding: 30px 20px;
   border-radius: 16px;
 }
-
+audio {
+  width: 400px ;
+  align-items: center;
+}
 
 
 footer {
@@ -699,12 +771,30 @@ footer em {
   font-weight: 600;
   font-style: normal;
 }
+@media (max-width: 1200px) {
+  .baner-content .wrapper {
+  display: none;
+    
+    
+  }
+  
+}
+@media (max-width: 1400px) {
+  .baner-content .wrapper {
+  margin-left: 55rem;
+    
+    
+  }
+  
+}
+
+
 
 @media (max-width: 767px){
-  
-  
-
-  .baner-content {
+  audio {
+    width: 250px ;
+  }
+.baner-content {
     padding-top: 30vh;
   }
 
@@ -724,46 +814,26 @@ footer em {
   }
   .stay span::before {
     
-    content: "";
-    height: 50px;
-    width: 2px;
-    position: absolute;
-    top: 50%;
-    right: -10px;
-    background: #8DAA9E;
-    transform: translateY(-45%);
-    animation: blink 0.7s infinite;
+   
   }
   .stay span.stop-blinking::before {
-    animation: none;
+ 
   }
-  @keyframes blink {
-    50% { opacity: 0 }
-  }
+ 
 
   .baner-content .primary-button {
-    margin-top: 15px;
+
   }
   
   
   .service-content {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15vh;
-    background-image: url(../img/proj/IMG_5302blur.jpg);
-    background-attachment: fixed;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center center;
-    
-    
-    
+
   }
   
   .service-content .left-text h4 {
     font-size: 24px;
     font-weight: 500;
-    color: #fff;
+
     
   }
   
@@ -774,45 +844,26 @@ footer em {
   
   .service-content .left-text .left-box{
     
-    padding: 25px 30px;
-    text-align: left;
-    color: #fff;
-    margin-bottom: 30px;
-    overflow: auto;
-    background: rgba(53, 70, 67, 0.467);
-    border-radius: 16px;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(83, 102, 99, 0.3);
-    box-shadow: 1px 7px 31px 0px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 1px 7px 31px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px 7px 31px 0px rgba(0,0,0,0.75);
+
   
   }
   
   .service-content .left-text .line-dec {
-    width: 80px;
-    height: 1px;
-    background-color: #D7F0EA;
-    margin: 0px 0px 20px 0px;
+
     
   }
   
   .service-content .left-text p {
-    color: #fff;
+
   
   }
   
   .service-content .left-text ul {
-    padding: 0;
-    margin-top: 30px;
-    list-style: none;
+
   }
   
   .service-content .left-text ul li {
-    margin: 15px 0px;
-    font-weight: 600;
-    color: #fff;
+
   }
   
   .service-content .left-text .primary-button {
@@ -820,37 +871,22 @@ footer em {
   }
   
   .service-content  .service-item-history {
-    padding: 25px 30px;
-    text-align: left;
-    color: #fff;
-    margin-bottom: 30px;
-    overflow: auto;
-    background: rgba(53, 70, 67, 0.467);
-    border-radius: 16px;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(83, 102, 99, 0.3);
-    box-shadow: 1px 7px 31px 0px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 1px 7px 31px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px 7px 31px 0px rgba(0,0,0,0.75);
+
   
     
   }
   .service-content .service-item-history {
-    height: 400px;
-    overflow: auto;
+
   }
   
   .service-content .line-dec {
-   width: 70px;
-    height: 1px;
-    background-color: #D7F0EA;
-    margin: 0px 0px 15px 0px;
+  
   }
   .service-content .service-item-supp {
 
   }
-  .rekom {
+   .rekom {
+    display: inline-block;
     
     margin-left:0.8em ;
     
@@ -862,6 +898,9 @@ footer em {
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px;
+  }
+  .projects-content .item:hover {
+    transform:translateY(-13px) ;
   }
 }
 
