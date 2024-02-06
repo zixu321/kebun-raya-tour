@@ -755,6 +755,7 @@ footer ul li a {
 footer ul li a:hover {
   color: #282b2f;
   background-color: #477976;
+  transform: translateY(-10px);
 }
 
 footer p {
